@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+
+.body-container{
+  height: 100%;
+}
+
+.container {
+  min-height: 100%;
+  margin-bottom: -70px;
+}
+
+.header {
+  padding: 20px;
+  align-items: center;
+  background-color: rgb(76, 77, 77);
+  color: white;
+}
+
+.section{
+  height: calc(100% - 260px);
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  margin: 50px;
+  align-items: center;
+  
+}
+
+.footer {
+  background-color: #42A5F5;
+  width: 100%;
+  color:aliceblue;
+  height: 50px;
+  position: relative;
+  top:20px
+ }
+
+ 
+
+.note {
+  display:flex;
+  flex-direction: column;
+  background: #f4f4f4;
+  margin-left: 15px;
+  padding: 10px 20px ;
+  cursor: pointer;
+  min-width: 240px;
+  min-height:100px;
+  overflow-y: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.note-text{
+  margin-bottom: 10px;
+  min-height:50px;
+}
+
+.note-delete{
+  padding:5px;
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  border: none;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.note-date{
+  
+  font-size:10px;
+  color:gray;
+  height: 20px;
+  position: relative;
+  margin-top: auto;
+}
+
+.notes{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-bottom: 15px;
+  
+}
+
+.icon{
+  position: relative;
+  left: 100px;
+}
+
+.form-control {
+  margin: 20px 0;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-control textarea {
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+  width: 300px;
+}
+
+.add-title{
+  width:310px;
+  font-size: 17px;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: .5;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 10%;
+  left: calc(50vw - 225px);
+  z-index: 1050;
+  min-width: 450px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+
+.modal {
+  z-index: 100;
+  background: white;
+  position: relative;
+  margin: 1.75rem auto;
+  border-radius: 3px;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-close-button {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  opacity: .3;
+  cursor: pointer;
+  border: none;
+}
+
+
+
